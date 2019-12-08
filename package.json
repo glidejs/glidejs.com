@@ -1,0 +1,54 @@
+{
+  "name": "@glidejs/website",
+  "version": "1.0.0-alpha",
+  "description": "A website of the Glide.js slider and carousel.",
+  "license": "MIT",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com/)",
+  "homepage": "https://glidejs.com",
+  "keywords": [
+    "glidejs",
+    "website"
+  ],
+  "dependencies": {
+    "@glidejs/docs/3.0": "git://github.com/glidejs/docs.git#master",
+    "@glidejs/docs/4.0": "git://github.com/glidejs/docs.git#master",
+    "@glidejs/glide": "^3.3.0",
+    "fs-extra": "^7.0.1",
+    "glob": "^7.1.3",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "remark-frontmatter": "^1.3.1",
+    "remark-html": "^9.0.0",
+    "remark-parse": "^6.0.3",
+    "remark-parse-yaml": "^0.0.2",
+    "rimraf": "^2.6.3",
+    "rimraf-promise": "^2.0.0",
+    "unified": "^7.1.0",
+    "unist-util-visit": "^1.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-react": "^7.0.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build:data": "node generate.data.js",
+    "build:next": "next build",
+    "build": "npm run build:data && npm run build:next",
+    "export": "npm run build && next export -o public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glidejs/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/glidejs/website/issues"
+  }
+}
