@@ -1,0 +1,7 @@
+node_modules/
+public/
+src/docs/
+
+.DS_Store
+.env
+

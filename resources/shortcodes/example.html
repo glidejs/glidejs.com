@@ -1,0 +1,26 @@
+<div class="example {% if (active) %}example--active{% endif %}" data-component="example" data-active-class="example--active">
+  <div class="example__frame">
+    {{ html | safe }}
+  </div>
+
+  <div class="example__markup">
+    <button class="example__toggle" data-ref="example[toggle]">
+      <div class="grid grid--justify">
+        <div class="grid__column">
+          View example's code
+        </div>
+
+        <div class="grid__column grid__column--shrink">
+          <span class="example__arrow"></span>
+        </div>
+      </div>
+    </button>
+    <pre class="example__code"><code class="language-js line-numbers">{{ js }}</code></pre>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function (event) {
+      {{ js | safe }}
+    })
+  </script>
+</div>

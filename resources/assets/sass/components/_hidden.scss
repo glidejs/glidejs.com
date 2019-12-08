@@ -1,0 +1,9 @@
+.hidden {
+  display: initial;
+
+  &\@medium {
+    @include breakpoint(medium down) {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,216 @@
+// ------------------------------------------------------
+// Bemoid Framework Settings
+// ------------------------------------------------------
+// This file holds framework settings. You can easly
+// customize framework's modules by changing
+// variable values listed in here.
+
+// Colors
+// ------------------------------------------------------
+$colors: (
+  primary: #ed145b,
+  secondary: #7b31f4,
+  success: #26c65e,
+  warning: #ffde66,
+  error: #ec3953,
+  info: #3273dc,
+  white: #fff,
+  lighter-gray: #c1cde5,
+  light-gray: #969fb3,
+  gray: #818999,
+  dark-gray: #32333f,
+  darker-gray: #05070b,
+  black: #000,
+);
+
+// Breakpoints
+// ------------------------------------------------------
+$breakpoints: (
+  xsmall: 0,
+  small: em(480px),
+  medium: em(680px),
+  large: em(768px),
+  xlarge: em(1024px),
+  xxlarge: em(1240px)
+);
+$breakpoints-offset: em(1px);
+
+// Radiuses
+// ------------------------------------------------------
+$radiuses: (
+  xsmall: rem(4px),
+  small: rem(6px),
+  medium: rem(8px),
+  large: rem(12px),
+  xlarge: rem(18px),
+  xxlarge: rem(27px),
+  circle: 50%
+);
+$radius: medium;
+
+// Spaces
+// ------------------------------------------------------
+$spaces: (
+  xsmall: em(3px),
+  small: em(6px),
+  medium: em(9px),
+  large: em(18px),
+  xlarge: em(24px),
+  xxlarge: em(36px),
+  big: em(85px),
+);
+
+// Body
+// ------------------------------------------------------
+$body-background: linear-gradient(
+  to bottom,
+  color(darker-gray) 0%,
+  darken(color(dark-gray), 12%) 100%
+);
+
+// Line
+// ------------------------------------------------------
+$line-height: 1.8;
+
+// Font
+// ------------------------------------------------------
+$font-size: 18px;
+$font-color: color(gray);
+$font-antialiasing: true;
+$font-family-primary: 'Nunito Sans', BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-family-secondary: 'Lato', BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-family-monospace: 'Fira Code', 'Lucida Console', 'Monaco', monospace;
+
+// Link
+// ------------------------------------------------------
+$link-color: color(white);
+$link-decoration: none;
+$link-hover-color: color(primary);
+
+// Headings
+// ------------------------------------------------------
+$headings: (
+  xsmall: (
+    'h1': ('font-size': em(32px)),
+    'h2': ('font-size': em(27px)),
+    'h3': ('font-size': em(18px)),
+    'h4': ('font-size': em(16px)),
+    'h5': ('font-size': em(14px)),
+    'h6': ('font-size': em(12px)),
+  ),
+  medium: (
+    'h1': ('font-size': em(45px)),
+    'h2': ('font-size': em(36px)),
+    'h3': ('font-size': em(27px)),
+    'h4': ('font-size': em(21px)),
+    'h5': ('font-size': em(18px)),
+    'h6': ('font-size': em(14px)),
+  ),
+);
+$headings-font-family: $font-family-secondary;
+$headings-color: color(white);
+$headings-line-height: 1.25;
+$headings-font-weight: 400;
+
+// Button
+// ------------------------------------------------------
+$button-variants: (
+  neutral: (
+    'color': color(black),
+    'background-color': color(white) color(lighter-gray),
+  ),
+  primary: (
+    'color': color(white),
+    'background-color': color(primary) darken(color(primary), 10%),
+  ),
+  secondary: (
+    'color': color(white),
+    'background-color': color(secondary) darken(color(secondary), 10%),
+  )
+);
+$button-hollow-variants: (
+  neutral: (
+    'color': color(white),
+    'border-color': color(light-gray) color(white),
+  ),
+  primary: (
+    'color': color(primary) color(white),
+    'border-color': color(primary) darken(color(primary), 10%),
+  ),
+  secondary: (
+    'color': color(secondary) color(white),
+    'border-color': color(secondary) darken(color(secondary), 10%),
+  )
+);
+$button-sizes: (
+  xsmall: (
+    'font-size': em(11px)
+  ),
+  small: (
+    'font-size': em(14px)
+  ),
+  medium: (
+    'font-size': em(18px),
+    'padding': space(small) space(large)
+  ),
+  large: (
+    'font-size': em(20px)
+  )
+);
+$button-size: medium;
+$button-variant: neutral;
+$button-weight: 400;
+$button-align: center;
+$button-radius: radius(xxlarge);
+$button-wide-padding: em(40px);
+$button-disabled-opacity: 0.5;
+$button-hollow-variant: neutral;
+$button-hollow-border: 2px;
+$button-hollow-background: transparent;
+
+// Grid
+// ------------------------------------------------------
+$grid-columns: 12 !default;
+$grid-stackable: medium !default;
+$grid-sizes: (
+  small: breakpoint(small),
+  medium: breakpoint(medium),
+  large: breakpoint(large),
+  xlarge: breakpoint(xlarge),
+  xxlarge: breakpoint(xxlarge),
+) !default;
+$grid-gutters: (
+  xsmall: space(large),
+  large: space(xlarge),
+) !default;
+
+// Container
+// ------------------------------------------------------
+$container-sizes: (
+  expanded: 100%,
+  small: breakpoint(small),
+  medium: breakpoint(medium),
+  large: breakpoint(large),
+  xlarge: breakpoint(xlarge),
+  xxlarge: breakpoint(xxlarge),
+);
+$container-size: expanded;
+
+// Heading
+// ------------------------------------------------------
+$heading-margins: 0;
+
+// Paragraph
+// ------------------------------------------------------
+$paragraph-margins: 0;
+
+// Table
+// ------------------------------------------------------
+$table-padding: space(small) space(medium);
+$table-border-width: 1px;
+$table-border-style: solid;
+$table-border-color: color(dark-gray);
+$table-heading-background: color(dark-gray);
+$table-condense-padding: space(small) space(medium);
+$table-stripe-background: lighten(color(dark-gray), 1%);
+$table-hoverable-background: color(dark-gray);

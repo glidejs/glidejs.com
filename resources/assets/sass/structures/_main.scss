@@ -1,0 +1,109 @@
+.main {
+  margin-left: -2rem;
+  margin-right: -2rem;
+
+  & > * {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  & > * + * {
+    border-left: 1px solid color(dark-gray);
+  }
+
+  &__side {
+    display: none;
+
+    @include breakpoint(medium up) {
+      display: initial;
+    }
+  }
+
+  &__body,
+  &__sidebar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    
+    @include breakpoint(medium up) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__content {
+    @include breakpoint(xxlarge up) {
+      padding-right: 20%;
+    }
+  }
+
+  &__body {
+    a:not([class]) {
+      color: color(lighter-gray);
+      text-decoration: underline;
+
+      &:hover {
+        color: color(secondary);
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      code {
+        font-size: 0.8em;
+        font-weight: 400;
+        vertical-align: middle;
+      }
+
+      small {
+        margin-left: 0.5em;
+        font-size: 0.5em;
+      }
+    }
+
+    pre {
+      @extend .pre;
+
+      @include breakpoint(xxlarge up) {
+        width: calc(120% + 1.5rem);
+        margin-left: -1.5rem;
+      }
+    }
+
+    code {
+      @extend .code;
+    }
+
+    strong {
+      color: color(white);
+    }
+
+    blockquote {
+      @extend .blockquote;
+
+      @include breakpoint(xxlarge up) {
+        width: calc(120% + 1.5rem);
+        margin-left: -1.5rem;
+      }
+    }
+
+    table {
+      @extend .table;
+
+      thead {
+        @extend .table__head;
+      }
+
+      tfoot {
+        @extend .table__footer;
+      }
+
+      td,
+      th {
+        @extend .table__cell;
+      }
+    }
+
+    hr {
+      @extend .hr;
+    }
+  }
+}

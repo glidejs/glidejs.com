@@ -1,0 +1,6 @@
+{% extends "examples/layout.html" %}
+
+{% block content %}
+  Move <button id="{{ id }}-forward" class="button button--hollow button--xsmall">forward</button>,
+   <button id="{{ id }}-backward" class="button button--hollow button--xsmall">backward</button> or <button id="{{ id }}-jump" class="button button--hollow button--xsmall">jump to third</button> slide. You can also rewind to <button id="{{ id }}-beginning" class="button button--hollow button--xsmall">beginning</button> or <button id="{{ id }}-end" class="button button--hollow button--xsmall">end</button>.
+{% endblock %}

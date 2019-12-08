@@ -1,0 +1,11 @@
+.button {
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1.5rem 0 rgba(color(black), 0.2);
+  }
+
+  &__icon {
+    opacity: 0.5;
+  }
+}

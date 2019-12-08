@@ -1,0 +1,6 @@
+/* uncss:ignore start */
+:not(.no-js) [data-ref="fadereveal[el]"],
+:not(.no-js) [data-ref="slidereveal[el]"] {
+  visibility: hidden;
+}
+/* uncss:ignore end */

@@ -1,0 +1,38 @@
+.navbar {
+  $this: &;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(
+      to right,
+      color(primary) 0%,
+      color(secondary) 100%
+    );
+  }
+
+  &__wrapper {
+    padding-top: rem(36px);
+  }
+
+  &__menu {
+    text-align: center;
+  }
+
+  &--variant {
+    #{$this}__wrapper {
+      padding-top: rem(36px);
+      padding-bottom: rem(36px);
+    }
+
+    #{$this}__menu {
+      text-align: right;
+
+      @include breakpoint(medium up) {
+        text-align: center;
+      }
+    }
+  }
+}

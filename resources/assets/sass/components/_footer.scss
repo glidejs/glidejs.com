@@ -1,0 +1,10 @@
+.footer {
+  text-align: center;
+  background-color: color(dark-gray);
+
+  &__wrapper {
+    font-size: 0.8em;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}

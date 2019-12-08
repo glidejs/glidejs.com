@@ -1,0 +1,29 @@
+.nav {
+  $this: &;
+
+  &__item {
+    &--active {
+      #{$this}__link {
+        display: inline-block;
+        position: relative;
+        color: color(white);
+
+        &:after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 3px;
+          background-color: color(primary);
+        }
+      }
+    }
+  }
+
+  &__link {
+    color: color(light-gray);
+
+    &:hover {
+      color: color(white);
+    }
+  }
+}

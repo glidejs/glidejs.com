@@ -1,0 +1,19 @@
+.glide {
+  cursor: -webkit-grab;
+
+  &__slides {
+    margin: 0;
+  }
+
+  &__arrow {
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+  }
+
+  &--dragging {
+    cursor: -webkit-grabbing;
+  }
+}

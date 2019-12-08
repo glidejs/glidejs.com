@@ -1,0 +1,81 @@
+{% extends "resources/templates/layout/layout.html" %}
+
+{% set template = 'docs' %}
+
+{% block header %}
+  {% include "resources/templates/partials/navbar/navbar.html" %}
+{% endblock %}
+
+{% block body %}
+  <div class="container visible visible@medium" data-component="fadereveal">
+    <select class="select-menu select input input--expand" data-ref="fadereveal[el]" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+      <option disabled selected>Choose documentation...</option>
+
+      <optgroup label="Docs">
+        {% for file in collections.docs %}
+          <option value="/{{ file.paths.dir }}">
+            {{ file.title }}
+          </option>
+        {% endfor %}
+      </optgroup>
+
+      <optgroup label="Components">
+        {% for file in collections.components %}
+          <option value="/{{ file.paths.dir }}">
+            {{ file.title }}
+          </option>
+        {% endfor %}
+      </optgroup>
+    </select>
+  </div>
+
+  <div class="wrapper container container--xlarge container--center" data-component="fadereveal">
+    <div class="main grid">
+      <div class="grid__column grid__column--8@medium grid__column--9@xlarge grid__column--10@xxlarge">
+        <div class="main__body" data-ref="fadereveal[el]">
+          <h1 class="heading">{{ title | safe }}</h1>
+
+          <div class="main__content">{{ contents | safe }}</div>
+        </div>
+      </div>
+
+      <div class="main__side grid__column grid__column--4 grid__column--3@xlarge grid__column--2@xxlarge">
+        <aside class="main__sidebar sidebar space space--xxlarge" data-ref="fadereveal[el]">
+          <nav class="nav space space--xlarge">
+            <h4 class="heading">Docs</h4>
+
+            <ul class="nav__list list list--unstyle space space--small">
+              {% for file in collections.docs %}
+                <li class="nav__item {% if file.paths.dir === path %}nav__item--active{% endif %} list__item">
+                  <a class="nav__link" href="/{{ file.paths.dir }}">
+                    {{ file.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+
+          <nav class="nav space space--xlarge">
+            <h4 class="heading">Components</h4>
+
+            <ul class="nav__list list list--unstyle space space--small">
+              {% for file in collections.components %}
+                <li class="nav__item {% if file.paths.dir === path %}nav__item--active{% endif %} list__item">
+                  <a class="nav__link" href="/{{ file.paths.dir }}">
+                    {{ file.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </aside>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+
+  <script src="/js/docs.js"></script>
+{% endblock %}

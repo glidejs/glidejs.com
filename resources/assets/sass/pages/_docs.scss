@@ -1,0 +1,13 @@
+.docs {
+  & > * + * {
+    border-top: 1px solid color(dark-gray);
+  }
+
+  &__body {
+    & > * + * {
+      @include breakpoint(medium down) {
+        border-top: 1px solid color(dark-gray);
+      }
+    }
+  }
+}

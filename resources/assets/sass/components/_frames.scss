@@ -1,0 +1,17 @@
+.frames {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+  @include breakpoint(medium up) {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  &__list {
+    overflow: visible;
+  }
+
+  &__item {
+    transform: perspective(2000px);
+  }
+}

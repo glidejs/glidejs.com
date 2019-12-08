@@ -1,0 +1,61 @@
+{
+  "name": "@glidejs/website",
+  "version": "1.0.0",
+  "description": "A website of the Glide.js slider and carousel.",
+  "scripts": {
+    "clean": "rm -rf public",
+    "docs": "rm -rf src/docs && cp -r node_modules/@glidejs/docs src/docs",
+    "js:glide": "rollup --config build/build.javascript.js -i resources/assets/js/glide.js -o public/js/glide.js",
+    "js:index": "rollup --config build/build.javascript.js -i resources/assets/js/index.js -o public/js/index.js",
+    "js:docs": "rollup --config build/build.javascript.js -i resources/assets/js/docs.js -o public/js/docs.js",
+    "build:metalsmith": "npm run clean && node build/build.metalsmith.js",
+    "build:js": "npm run js:glide && npm run js:index && npm run js:docs",
+    "build:sass": "node-sass resources/assets/sass/app.scss public/css/app.css",
+    "build:postcss": "postcss -o public/css/app.css public/css/app.css --config build",
+    "build": "npm run docs && npm run build:metalsmith && npm run build:sass && npm run build:js && npm run build:postcss"
+  },
+  "keywords": [
+    "glidejs",
+    "website"
+  ],
+  "dependencies": {
+    "@bemoid/bemoid": "git://github.com/bemoid/bemoid.git#4f7309f462",
+    "@glidejs/docs": "git://github.com/glidejs/docs.git",
+    "@glidejs/glide": "^3.0.0",
+    "prismjs": "^1.13.0",
+    "scrollreveal": "^3.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "cssnano": "^3.10.0",
+    "dotenv": "^4.0.0",
+    "gzip-size": "^4.1.0",
+    "metalsmith": "^2.1.0",
+    "metalsmith-algolia": "^0.1.0",
+    "metalsmith-assets": "^0.1.0",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-filenames": "^1.0.0",
+    "metalsmith-layouts": "^1.4.1",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-paths": "^3.0.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-static": "0.0.5",
+    "node-sass": "^4.8.3",
+    "nunjucks": "^3.1.2",
+    "postcss": "^6.0.21",
+    "postcss-cli": "^5.0.0",
+    "postcss-uncss": "^0.16.1",
+    "rollup": "^0.55.5",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.4.1",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "shortcode-insert": "^1.0.2",
+    "uglify": "^0.1.5",
+    "uncss": "^0.16.2"
+  }
+}

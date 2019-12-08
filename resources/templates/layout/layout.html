@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Glide.js | A dependency-free JavaScript ES6 slider and carousel</title>
+
+        <meta name="description" content="A dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more">
+
+        <meta itemprop="name" content="Glide.js | A dependency-free JavaScript ES6 slider and carousel">
+        <meta itemprop="description" content="A dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Glide.js | A dependency-free JavaScript ES6 slider and carousel">
+        <meta name="twitter:description" content="A dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more">
+        <meta name="twitter:site" content="@jedrzejchalubek">
+        <meta name="twitter:creator" content="@jedrzejchalubek">
+        <meta name="twitter:image:src" content="https://glidejs.com/images/glidejs-cover.jpg">
+
+        <meta name="og:title" content="Glide.js | A dependency-free JavaScript ES6 slider and carousel">
+        <meta name="og:description" content="A dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more">
+        <meta name="og:image" content="https://glidejs.com/images/glidejs-cover.jpg">
+        <meta name="og:url" content="https://glidejs.com">
+        <meta name="og:site_name" content="Glide.js | A dependency-free JavaScript ES6 slider and carousel">
+        <meta name="fb:admins" content="100000445677922">
+        <meta name="og:type" content="website">
+
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="/css/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:900&amp;subset=latin-ext" rel="stylesheet">
+        <script async>document.documentElement.classList.remove('no-js')</script>
+    </head>
+  <body>
+    <div class="{{ template }}">
+      <header class="{{ template }}__header header">
+        {% block header %}{% endblock %}
+      </header>
+
+      <main class="{{ template }}__body">
+        {% block body %}{% endblock %}
+      </main>
+
+      {% block footer %}
+        <footer class="{{ template }}__footer footer">
+          <div class="footer__panel panel">
+            <div class="wrapper container space space--xlarge">
+              <h3 class="heading">It’s for you, folks</h3>
+
+              <div class="container container--medium container--center">
+                <h4 class="lead">I needed flexible and easily customizable slider and carousel. There wasn't any that would meet my needs. So it came about, Glide.js</h4>
+              </div>
+
+              <a href="/docs/contributing" class="button button--secondary gutter gutter--xsmall">
+                <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 511.63 511.631"><path d="M489.93 167.875c-14.469-14.465-31.601-21.698-51.394-21.698H331.757c4.189-11.419 6.283-23.601 6.283-36.545 0-23.219-7.758-41.204-23.271-53.96-15.516-12.751-35.166-19.126-58.957-19.126-7.232 0-13.849 1.665-19.845 4.998-5.996 3.328-11.231 8.042-15.703 14.128-4.471 6.091-8.326 12.087-11.56 17.989-3.239 5.901-6.761 12.752-10.566 20.555-3.806 7.808-6.945 13.706-9.419 17.705-6.661 10.47-16.18 22.742-28.549 36.829-.382.571-1.715 2.19-3.999 4.854-2.284 2.666-4.093 4.712-5.424 6.139a531.098 531.098 0 0 1-5.852 6.139c-2.574 2.666-4.858 4.805-6.854 6.424a762.98 762.98 0 0 1-6.424 5.14c-2.284 1.809-4.521 3.14-6.71 3.999-2.187.855-4.233 1.283-6.136 1.283H36.547c-10.09 0-18.704 3.575-25.841 10.71C3.571 200.57 0 209.184 0 219.272v182.725c0 10.088 3.567 18.701 10.706 25.84 7.141 7.136 15.75 10.708 25.841 10.708h82.224c11.228 0 32.449 5.619 63.666 16.848 35.972 13.134 66.616 19.694 91.932 19.694 26.836 0 48.44-7.662 64.809-22.983 16.368-15.317 24.461-36.206 24.267-62.67 11.427-14.657 17.135-31.597 17.135-50.819 0-4.185-.288-8.277-.855-12.274 6.283-10.849 9.804-22.176 10.567-33.976h48.252c19.986 0 37.165-7.231 51.538-21.696 14.366-14.464 21.55-31.688 21.55-51.671-.006-19.609-7.24-36.646-21.702-51.123zM67.665 396.576C64.047 400.193 59.766 402 54.818 402c-4.952 0-9.235-1.807-12.85-5.424-3.618-3.617-5.424-7.898-5.424-12.847s1.807-9.233 5.424-12.848c3.619-3.617 7.898-5.427 12.85-5.427 4.948 0 9.229 1.81 12.847 5.427 3.616 3.614 5.424 7.898 5.424 12.848 0 4.949-1.809 9.23-5.424 12.847zM464.23 244.984c-7.228 7.233-15.804 10.848-25.701 10.848H344.03c2.854 3.234 5.232 7.758 7.135 13.562 1.906 5.804 2.858 11.088 2.858 15.845 0 13.135-5.045 24.455-15.133 33.969 3.429 6.091 5.14 12.662 5.14 19.701 0 7.043-1.667 14.037-4.996 20.984-3.333 6.943-7.854 11.94-13.565 14.986.951 5.701 1.43 11.036 1.43 15.988 0 31.777-17.986 47.67-53.96 47.67-15.419 0-32.502-3.045-51.249-9.13a5331.591 5331.591 0 0 1-55.246-18.274c-18.083-6.087-33.974-9.133-47.68-9.133h-9.135V219.28h9.135c13.513 0 26.835-5.426 39.969-16.279 5.713-4.762 15.325-14.851 28.837-30.266 13.706-15.415 24.366-29.211 31.977-41.396 2.474-3.999 5.996-10.185 10.566-18.559 12.562-26.458 21.127-39.684 25.697-39.684 13.514 0 24.506 2.902 32.976 8.705 8.47 5.807 12.703 15.083 12.703 27.835 0 8.186-1.427 16.228-4.281 24.126-2.857 7.898-5.995 14.372-9.421 19.414s-6.567 10.278-9.422 15.703c-2.854 5.424-4.28 10.041-4.28 13.846h164.452c9.513 0 17.986 3.665 25.412 10.992 7.42 7.332 11.129 15.843 11.129 25.553 0 9.906-3.614 18.47-10.848 25.714z" /></svg>
+
+                <span>Make a contribution</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__wrapper wrapper container container--xlarge container--center space space--large">
+            <section>
+              <p class="paragraph">Released under the MIT License</p>
+
+              <p class="paragraph">
+                Copyright © 2013-<script>document.write((new Date()).getFullYear())</script> <a href="//jedrzejchalubek.com">Jędrzej Chałubek</a>
+              </p>
+            </section>
+
+            <ul class="list list--inline list--unstyle gutter gutter--small">
+              <li class="list__item">
+                <a href="//github.com/jedrzejchalubek">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                    <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="list__item">
+                <a href="//twitter.com/jedrzejchalubek">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544A8.127 8.127 0 0 1 5.5 16.898a5.778 5.778 0 0 0 4.252-1.189 2.879 2.879 0 0 1-2.684-1.995 2.88 2.88 0 0 0 1.298-.049c-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359a2.877 2.877 0 0 1-.889-3.835 8.153 8.153 0 0 0 5.92 3.001 2.876 2.876 0 0 1 4.895-2.62 5.73 5.73 0 0 0 1.824-.697 2.884 2.884 0 0 1-1.263 1.589 5.73 5.73 0 0 0 1.649-.453 5.765 5.765 0 0 1-1.433 1.489z"/>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="list__item">
+                <a href="//dribbble.com/jedrzejchalubek">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                    <path d="M11.455 9.985c-1.419.417-3.11.632-5.067.646a5.798 5.798 0 0 1 3.003-3.784 26.112 26.112 0 0 1 2.064 3.138zm.965 1.93a21.04 21.04 0 0 0-.391-.835c-1.622.51-3.561.769-5.804.772L6.217 12c0 1.404.504 2.692 1.34 3.695 1.266-1.901 2.891-3.164 4.863-3.78zm-3.97 4.641a5.73 5.73 0 0 0 5.624.836 22.837 22.837 0 0 0-1.19-4.352c-1.819.542-3.285 1.714-4.434 3.516zm7.075-9.13A5.75 5.75 0 0 0 12 6.217c-.49 0-.964.068-1.418.184a27.176 27.176 0 0 1 2.035 3.172c1.236-.524 2.204-1.24 2.908-2.147zM24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zm-5 0a7 7 0 1 0-14.001.001A7 7 0 0 0 19 12zm-5.824-1.349c.157.324.305.651.447.98 1.26-.217 2.641-.204 4.143.042a5.748 5.748 0 0 0-1.354-3.403c-.807 1.005-1.89 1.798-3.236 2.381zm.914 2.132a23.936 23.936 0 0 1 1.119 4.023 5.797 5.797 0 0 0 2.497-3.909c-1.317-.228-2.522-.268-3.616-.114z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      {% endblock %}
+    </div>
+
+    {% block scripts %}
+      <script src="/js/glide.js"></script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116594947-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116594947-1');
+      </script>
+    {% endblock %}
+  </body>
+</html>

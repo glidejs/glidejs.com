@@ -1,0 +1,5 @@
+{% extends "examples/layout.html" %}
+
+{% block content %}
+  Peek <input class="input input--inline" id="{{ id }}-before" type="number" value="100" min="0" max="150" step="10"> pixels on the left and <input class="input input--inline" id="{{ id }}-after" type="number" value="50" min="0" max="150" step="10"> on right side
+{% endblock %}

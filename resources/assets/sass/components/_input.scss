@@ -1,0 +1,33 @@
+.input {
+  background-color: transparent;
+  border: 1px solid color(dark-gray);
+  padding: 0.5em;
+  color: color(white);
+  font-size: 0.8em;
+  border-radius: 0;
+
+  &--large {
+    font-size: 1.25em;
+  }
+
+  &--inline {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.25em;
+  }
+
+  &--pill {
+    border-radius: 1.5em;
+  }
+
+  &--expand {
+    width: 100%;
+    display: block;
+  }
+
+  &--disabled,
+  &[disabled] {
+    background-color: darken(color(dark-gray), 10%);
+    color: color(gray);
+  }
+}

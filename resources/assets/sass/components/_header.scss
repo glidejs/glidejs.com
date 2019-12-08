@@ -1,0 +1,20 @@
+.header {
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    width: 100vw;
+    height: 100vw;
+    background-image: radial-gradient(
+      circle at center,
+      color('dark-gray') 0%,
+      transparentize(color('dark-gray'), 1) 66.66%
+    );
+    transform: translate(-50%, -50%);
+  }
+}

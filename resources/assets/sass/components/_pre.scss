@@ -1,0 +1,13 @@
+.pre {
+  color: color(lighter-gray);
+  border-radius: em(6px);
+  background-color: black;
+  padding: 1em 1.2em;
+  font-size: 0.9em;
+
+  code {
+    background-color: transparent;
+    color: color(white);
+    padding: 0;
+  }
+}

@@ -1,0 +1,13 @@
+{% extends "examples/layout.html" %}
+
+{% block content %}
+  Ease moving animation with <select id="{{ id }}-select" class="input input--inline">
+    <option value="linear" selected>linear</option>
+    <option value="ease">ease</option>
+    <option value="ease-in">ease-in</option>
+    <option value="ease-out">ease-out</option>
+    <option value="ease-in-out">ease-in-out</option>
+    <option value="cubic-bezier(0.680, -0.550, 0.265, 1.550)">bounce</option>
+  </select> timing function
+{% endblock %}
+
