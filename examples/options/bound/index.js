@@ -1,13 +1,14 @@
-var input = document.querySelector('#{{ id }}-input')
+var checkbox = document.querySelector('#{{ id }}-checkbox')
 
 var glide = new Glide('#{{ id }}', {
-  perView: 3,
-  bound: true,
+  bound: checkbox.checked,
+  startAt: 7,
+  perView: 3
 })
 
-input.addEventListener('input', function (event) {
+checkbox.addEventListener('change', function () {
   glide.update({
-    perView: event.target.value
+    bound: checkbox.checked
   })
 })
 

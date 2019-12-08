@@ -4,7 +4,7 @@
 @import 'settings';
 @import 'bemoid';
 
-@import '../../../node_modules/@glidejs/glide/src/assets/sass/glide.core';
+@import '../../../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss';
 
 @import 'generic/generic';
 
@@ -43,3 +43,4 @@
 
 @import 'vendor/prism';
 @import 'vendor/reveal';
+@import 'vendor/carbonads';

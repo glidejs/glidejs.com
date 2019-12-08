@@ -1,0 +1,86 @@
+.ad {
+  #carbonads {
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    font-size: 12px;
+    border: 1px solid color(dark-gray);
+    max-width: 160px;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: color(white);
+      }
+    }
+  }
+
+  .carbon-img {
+    display: block;
+    margin-bottom: 1em;
+
+    img {
+      display: block;
+    }
+  }
+
+  .carbon-text {
+    display: block;
+    text-align: left;
+    color: color(light-gray);
+    margin-bottom: 1em;
+  }
+
+  .carbon-poweredby {
+    display: block;
+    font-size: 8px;
+    color: color(gray);
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 0.9;
+    letter-spacing: 1px;
+  }
+
+  &--fixed {
+    position: fixed;
+    right: 1rem;
+    bottom: 0;
+    z-index: 100;
+    background-color: color(darker-gray);
+
+    @include breakpoint(xxlarge up) {
+      #carbonads {
+        border-bottom: 0;
+      }
+    }
+
+    @include breakpoint(xxlarge down) {
+      position: static;
+      padding: 1.5rem;
+
+      #carbonads {
+        position: relative;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .carbon-wrap {
+        display: flex;
+      }
+
+      .carbon-img {
+        margin-bottom: 0;
+        margin-right: 15px;
+      }
+
+      .carbon-poweredby {
+        position: absolute;
+        bottom: 15px;
+        left: 160px;
+      }
+    }
+  }
+}

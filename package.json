@@ -19,10 +19,10 @@
     "website"
   ],
   "dependencies": {
-    "@bemoid/bemoid": "git://github.com/bemoid/bemoid.git#4f7309f462",
+    "@bemoid/bemoid": "git://github.com/bemoid/bemoid.git#59e836b20300e81e8ce2b93ecec788f0e6c3e037",
     "@glidejs/docs": "git://github.com/glidejs/docs.git",
-    "@glidejs/glide": "^3.0.0",
-    "prismjs": "^1.13.0",
+    "@glidejs/glide": "^3.2.7",
+    "prismjs": "^1.16.0",
     "scrollreveal": "^3.4.0"
   },
   "devDependencies": {
@@ -44,18 +44,17 @@
     "metalsmith-paths": "^3.0.1",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-static": "0.0.5",
-    "node-sass": "^4.8.3",
-    "nunjucks": "^3.1.2",
-    "postcss": "^6.0.21",
-    "postcss-cli": "^5.0.0",
+    "node-sass": "^4.11.0",
+    "nunjucks": "^3.2.0",
+    "postcss": "^6.0.23",
+    "postcss-cli": "^5.0.1",
     "postcss-uncss": "^0.16.1",
     "rollup": "^0.55.5",
-    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^8.4.1",
-    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-uglify": "^3.0.0",
     "shortcode-insert": "^1.0.2",
-    "uglify": "^0.1.5",
-    "uncss": "^0.16.2"
+    "uglify": "^0.1.5"
   }
 }

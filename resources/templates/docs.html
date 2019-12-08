@@ -7,8 +7,8 @@
 {% endblock %}
 
 {% block body %}
-  <div class="container visible visible@medium" data-component="fadereveal">
-    <select class="select-menu select input input--expand" data-ref="fadereveal[el]" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+  <div class="container visible visible@medium">
+    <select class="select-menu select input input--expand" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
       <option disabled selected>Choose documentation...</option>
 
       <optgroup label="Docs">
@@ -29,18 +29,22 @@
     </select>
   </div>
 
-  <div class="wrapper container container--xlarge container--center" data-component="fadereveal">
+  <div class="wrapper container container--xlarge container--center">
     <div class="main grid">
-      <div class="grid__column grid__column--8@medium grid__column--9@xlarge grid__column--10@xxlarge">
-        <div class="main__body" data-ref="fadereveal[el]">
+      <div class="grid__column grid__column--8@medium grid__column--9@xlarge">
+        <div class="main__body">
           <h1 class="heading">{{ title | safe }}</h1>
 
           <div class="main__content">{{ contents | safe }}</div>
         </div>
       </div>
 
-      <div class="main__side grid__column grid__column--4 grid__column--3@xlarge grid__column--2@xxlarge">
-        <aside class="main__sidebar sidebar space space--xxlarge" data-ref="fadereveal[el]">
+      <div class="main__side grid__column grid__column--4 grid__column--3@xlarge">
+        <aside class="main__sidebar sidebar space space--xxlarge">
+          <div class="ad">
+            <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7I6K7E&placement=glidejscom" id="_carbonads_js"></script>
+          </div>
+
           <nav class="nav space space--xlarge">
             <h4 class="heading">Docs</h4>
 

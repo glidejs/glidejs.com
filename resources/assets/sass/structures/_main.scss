@@ -23,7 +23,7 @@
   &__sidebar {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    
+
     @include breakpoint(medium up) {
       padding-top: 3rem;
       padding-bottom: 3rem;
