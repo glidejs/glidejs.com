@@ -16,10 +16,10 @@ jobs:
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
       with:
-        args: container:push -a glidejs-website-7kb50-master web
+        args: container:push -a glidejs-7kb50-master web
     - name: release
       uses: actions/heroku@master
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
       with:
-        args: container:release -a glidejs-website-7kb50-master web
+        args: container:release -a glidejs-7kb50-master web
