@@ -22,7 +22,7 @@
     "@bemoid/bemoid": "git://github.com/bemoid/bemoid.git#59e836b20300e81e8ce2b93ecec788f0e6c3e037",
     "@glidejs/docs": "git://github.com/glidejs/docs.git",
     "@glidejs/glide": "^3.2.7",
-    "prismjs": "^1.16.0",
+    "prismjs": "^1.20.0",
     "scrollreveal": "^3.4.0"
   },
   "devDependencies": {
@@ -44,8 +44,8 @@
     "metalsmith-paths": "^3.0.1",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-static": "0.0.5",
-    "node-sass": "^4.11.0",
-    "nunjucks": "^3.2.0",
+    "node-sass": "^4.13.1",
+    "nunjucks": "^3.2.1",
     "postcss": "^6.0.23",
     "postcss-cli": "^5.0.1",
     "postcss-uncss": "^0.16.1",
