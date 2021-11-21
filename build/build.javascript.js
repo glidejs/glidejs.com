@@ -1,22 +1,17 @@
-const path = require('path')
+const path = require("path");
 
-const babel = require('rollup-plugin-babel')
-const uglify = require('rollup-plugin-uglify')
-const commonjs = require('rollup-plugin-commonjs')
-const resolve = require('rollup-plugin-node-resolve')
+const { babel } = require("@rollup/plugin-babel");
+const { terser } = require("rollup-plugin-terser");
+const commonjs = require("@rollup/plugin-commonjs");
+const { nodeResolve } = require("@rollup/plugin-node-resolve");
 
-const config = require('./config')
+const config = require("./config");
 
 module.exports = {
-  input: path.join(config.paths.assets, 'js/app.js'),
+  input: path.join(config.paths.assets, "js/app.js"),
   output: {
-    file: path.join(config.paths.public, 'js/app.js'),
-    format: 'iife'
+    file: path.join(config.paths.public, "js/app.js"),
+    format: "iife",
   },
-  plugins: [
-    resolve(),
-    commonjs(),
-    babel(),
-    uglify()
-  ]
-}
+  plugins: [nodeResolve(), commonjs(), babel(), terser()],
+};
