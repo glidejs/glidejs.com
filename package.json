@@ -10,7 +10,7 @@
     "js:docs": "rollup --config build/build.javascript.js -i resources/assets/js/docs.js -o public/js/docs.js",
     "build:metalsmith": "npm run clean && node build/build.metalsmith.js",
     "build:js": "npm run js:glide && npm run js:index && npm run js:docs",
-    "build:sass": "node-sass resources/assets/sass/app.scss public/css/app.css",
+    "build:sass": "sass resources/assets/sass/app.scss:public/css/app.css",
     "build:postcss": "postcss -o public/css/app.css public/css/app.css --config build",
     "build": "npm run docs && npm run build:metalsmith && npm run build:sass && npm run build:js && npm run build:postcss"
   },
@@ -21,16 +21,14 @@
   "dependencies": {
     "@bemoid/bemoid": "git://github.com/bemoid/bemoid.git#59e836b20300e81e8ce2b93ecec788f0e6c3e037",
     "@glidejs/docs": "git://github.com/glidejs/docs.git",
-    "@glidejs/glide": "^3.2.7",
+    "@glidejs/glide": "git://github.com/glidejs/glide.git",
     "prismjs": "^1.21.0",
     "scrollreveal": "^3.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.6",
-    "babel-core": "^6.26.0",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-transform-object-assign": "^6.22.0",
-    "babel-preset-env": "^1.6.1",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
     "cssnano": "^3.10.0",
     "dotenv": "^4.0.0",
     "gzip-size": "^4.1.0",
@@ -44,17 +42,16 @@
     "metalsmith-paths": "^3.0.1",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-static": "0.0.5",
-    "node-sass": "^4.13.1",
+    "sass": "^1.43.4",
     "nunjucks": "^3.2.1",
     "postcss": "^6.0.23",
     "postcss-cli": "^5.0.1",
     "postcss-uncss": "^0.16.1",
-    "rollup": "^0.55.5",
-    "rollup-plugin-babel": "^3.0.7",
-    "rollup-plugin-commonjs": "^8.4.1",
-    "rollup-plugin-node-resolve": "^3.4.0",
-    "rollup-plugin-uglify": "^3.0.0",
-    "shortcode-insert": "^1.0.2",
-    "uglify": "^0.1.5"
+    "rollup": "^2.50.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "rollup-plugin-terser": "^7.0.2",
+    "shortcode-insert": "^1.0.2"
   }
 }
