@@ -43,7 +43,7 @@
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-static": "0.0.5",
     "sass": "^1.43.4",
-    "nunjucks": "^3.2.1",
+    "nunjucks": "^3.2.4",
     "postcss": "^6.0.23",
     "postcss-cli": "^5.0.1",
     "postcss-uncss": "^0.16.1",
